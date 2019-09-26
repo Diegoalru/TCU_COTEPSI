@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Proyecto que obtiene un numero del usuario y se realizan operaciones matematicas.
  */
 package clase_1_10_6;
 
@@ -9,7 +7,8 @@ import java.util.Scanner;
 
 /**
  *
- * @author diego
+ * @author Diego Rubi Salas
+ * @version 2
  */
 public class Clase_1_10_6 {
 
@@ -18,24 +17,36 @@ public class Clase_1_10_6 {
      */
     public static void main(String[] args) {
         //Variables
-        float  num = 20f;
-        int numUser;
-        float resultado;
+        float num = 20;     //Variable con dato estatico.
+        float numUser;      //Dato del usuario.
+        float resultado;    //Variable que almacenara los resultados.
 
-        //Creamos el objeto.
+        //Creamos una instancia de la clase Scanner.
         Scanner sc = new Scanner(System.in);
 
         //Solicitamos el dato al usuario
         System.out.print("Ingrese un numero: ");
         numUser = sc.nextInt();
 
-        //Muestra Resultados
+        //Realizar los calculos e imprimir los resultados.
+        /*
+         * Guardamos el resultado de cada operacion en la variable resultado.
+         * Esto con el fin de poder almacenar el resultado y poder utilizarlo en otra parte del codigo.
+         */
         resultado = num + numUser;
         System.out.println("El resultado de la suma es: " + resultado);
 
         resultado = num - numUser;
         System.out.println("El resultado de la resta es: " + resultado);
 
+        /*
+         * Para la division se requiere que almenos una de las variables sea flotante, 
+         * esto para que pueda mostrar sus decimales.
+         * 
+         * En caso de que no exista ninguna variable de tipo flotante, se puede castear de la siguente forma:
+         *  resultado = (float) num / numUser;
+         * Nota: Para esto es siempre nesesario que la variable resultado sea flotante.
+         */
         resultado = num / numUser;
         System.out.println("El resultado de la división es: " + resultado);
 
@@ -45,6 +56,6 @@ public class Clase_1_10_6 {
         resultado = num % numUser;
         System.out.println("El resultado de la multiplicación es: " + resultado);
 
-    }
+    }//Fin del Main.
 
-}
+}//Fin de la clase.
