@@ -17,7 +17,7 @@ public class Clase_1_10_6 {
      */
     public static void main(String[] args) {
         //Variables
-        float num = 20;     //Variable con dato estatico.
+        final float num = 20;     //Variable con dato constante.
         float numUser;      //Dato del usuario.
         float resultado;    //Variable que almacenara los resultados.
 
