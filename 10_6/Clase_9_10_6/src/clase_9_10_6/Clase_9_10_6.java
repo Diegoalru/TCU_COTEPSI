@@ -4,8 +4,13 @@ import java.util.Scanner;
 
 public class Clase_9_10_6 {
 
-    public static void main(String[] args) {
-        Ejemplo_1();
+    public static void main(String[] args) 
+    {
+        /*
+         * Descomentar el metodo que se quiere usar.
+         */
+        
+        //Ejemplo_1();
         Ejemplo_2();
     }
 
@@ -48,16 +53,17 @@ public class Clase_9_10_6 {
         /*
          * EJERCICIO #2
          * Leer un numero e indicar si es par o impar
+         *
+         * NOTA:
+         *  El operador % se le llama el operador de módulo.
+         *   El operador de % calcula el resto después de dividir el primer operando por el segundo.
+         *   Por ejemplo, digamos que estás calculando la división siguiente:
+         *       10 ÷ 3
+         *   Obviamente, el resultado es 3.333333.... o en otras palabras, 3 con un restante de 1. 
+         *   Ese restante es el resultado de usar el operador de módulo:
+         *       10 % 3 = 1    
          */
- /*
-            El operador % se le llama el operador de módulo.
-            El operador de % calcula el resto después de dividir el primer operando por el segundo.
-            Por ejemplo, digamos que estás calculando la división siguiente:
-                10 ÷ 3
-            Obviamente, el resultado es 3.333333.... o en otras palabras, 3 con un restante de 1. 
-            Ese restante es el resultado de usar el operador de módulo:
-                10 % 3 = 1    
-         */
+        
         //Crear objeto
         Scanner scanner = new Scanner(System.in);
 
@@ -77,6 +83,5 @@ public class Clase_9_10_6 {
             }
 
         } while (numero != 0); //Salir en caso de que sea 0 se termine el programa.
-
     }
 }
