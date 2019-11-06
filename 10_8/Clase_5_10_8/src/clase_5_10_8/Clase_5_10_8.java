@@ -5,8 +5,7 @@ package clase_5_10_8;
  */
 public class Clase_5_10_8 {
 
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         /*
         Operadores de condición: 
 	
@@ -19,8 +18,8 @@ public class Clase_5_10_8 {
 	>	Mayor que
 	>=	Mayor o igual que
 
-	Texto1.equals(Texto2);	Comparación de Strings.
-	Texto1.equalsIgnoreCase(Texto2);
+	Texto1.equals(Texto2)	Comparación de Strings.
+	Texto1.equalsIgnoreCase(Texto2)
 
 
         1- Verificar que 2 numeros sean iguales.
@@ -28,28 +27,6 @@ public class Clase_5_10_8 {
         3- Crear un login donde valide un Id y contraseña. Ambos deben de ser ingresados por el usuario.
          */
         
-        for (int i = 0; i <= 10; i++) {
-            System.out.println(i);
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        /*
-        System.out.println("****Compara numeros*********\n");
-        ComparaNumeros();
-        System.out.println("*************Numero mayor***************\n");
-        EncuentraElMayor();
-        System.out.println("*********Login**************");
-        Login();
-        */
     }
 
     /**
@@ -59,10 +36,11 @@ public class Clase_5_10_8 {
         //Variables
         int a = 2, b = 3;
 
-        if (a == b) {
-            System.out.println("Los numeros son iguales.\n");
-        } else {
+        if (a != b) {
             System.out.println("Los numeros son distintos.\n");
+        } else {
+            System.out.println("Los numeros son iguales.\n");
+
         }
     }
 
@@ -86,16 +64,16 @@ public class Clase_5_10_8 {
      */
     private static void Login() {
         //Variables.
-        java.util.Scanner scanner = new java.util.Scanner(System.in);
-        int id;
-        String pass;
+        java.util.Scanner scanner = new java.util.Scanner(System.in);//Objeto scanner
+        int id;                                                 //Id del usuario
+        String pass;                                            //Contraseña del usuario
 
         //Asignación de valor.
-        System.out.print("Ingrese su ID: ");                    //Mensaje ingreso de Id
-        id = scanner.nextInt();
+        System.out.print("Ingrese su ID: ");                    //Mensaje: Ingrese de Id
+        id = scanner.nextInt();                                 //Guardar buffer de Id
 
-        System.out.print("Ingrese se contraseña: ");
-        pass = scanner.next();
+        System.out.print("Ingrese se contraseña: ");            //Mensaje: Ingrese contraseña
+        pass = scanner.next();                                  //Guardar buffer de la contraseña
 
         if (id == 1) {                                          //Validar el id
             if (pass.equalsIgnoreCase("admin")) {               //Validar la contraseña
