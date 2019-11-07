@@ -53,7 +53,7 @@ public class Clase_12_10_6 {
                     Resultado += "M";
                     break;
                 /*
-                    Demas....
+                    Demas.... VER IMAGEN QUE SE ENCUENTRA EN PAQUETE: IMG >> "Lines.jpg". ¡VER SOLO LINEAS IMPARES!
                  */
                 default:
                     break;
@@ -85,7 +85,7 @@ public class Clase_12_10_6 {
                     Resultado += "D";
                     break;
                 /*
-                    Demas....
+                    Demas.... VER IMAGEN QUE SE ENCUENTRA EN PAQUETE: IMG >> "Lines.jpg". ¡VER SOLO LINEAS IMPARES!
                  */
                 default:
                     break;
